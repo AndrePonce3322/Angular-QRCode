@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import * as QRCode from 'qrcode'
+import * as QRCode from 'qrcode';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     document.addEventListener('contextmenu', (e) => {
       e.preventDefault();
     })
+
   }
 
   constructor(private http: HttpClient) { }
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit {
   generarCodigo() {
     if (this.value == '') {
       this.QRCodeImgResult = this.imagenDefault
-      return 
+      return
     }
     QRCode.toDataURL(this.value, (error, url) => {
       if (error) {
@@ -37,7 +38,7 @@ export class AppComponent implements OnInit {
 
   DownloadAndShare() {
     if (this.QRCodeImgResult == '') return
-    
+
     this.DescargarImagen(this.QRCodeImgResult, 'QRCodeImage');
   }
 
