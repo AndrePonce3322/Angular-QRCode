@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-:root{
+:root {
     --blue: #576CBC;
     --green: #539165;
     --yellow: #F7D060;
@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     padding: 0px;
     margin: 0px;
