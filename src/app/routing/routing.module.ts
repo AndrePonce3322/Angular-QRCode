@@ -5,13 +5,11 @@ import { MusicComponent } from '../music/music.component';
 
 const rutas: Routes = [
   { path: '', component: QRCODEComponent },
-  { path: 'music', component: MusicComponent }
-]
+  { path: 'music', component: MusicComponent },
+];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(rutas)
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(rutas)],
+  exports: [RouterModule],
 })
-export class RoutingModule { }
+export class RoutingModule {}
