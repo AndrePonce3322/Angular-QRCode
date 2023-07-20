@@ -1,4 +1,4 @@
-# Angular QRCODE
+# Angular QRCode
 
 ## Development server
 
